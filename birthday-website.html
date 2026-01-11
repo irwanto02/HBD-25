@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 25</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">Birthday Jein!</div>
+        <nav>
+          <ul>
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="photos">Photos</a></li>
+            <li><a href="#" data-page="message">Message</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Home Page -->
+      <div class="page home-page active" id="home">
+        <h1 class="birthday-title">Happy Birthday!</h1>
+        <div class="birthday-message">
+          <p>Selamat Ulang Tahun Sayang ❤️</p>
+          <p class="funny-quote" id="funnyQuote"></p>
+          <p>Silakan jelajahi situs ini, tambahkan foto favorit Anda, dan nikmati perayaannya dengan music</p>
+        </div>
+        <div id="confettiContainer"></div>
+      </div>
+
+      <!-- Photos Page -->
+      <div class="page photos-page" id="photos">
+        <h2 class="photo-title">Birthday Memories</h2>
+
+        <div class="upload-container">
+          <h3 class="upload-title">Add Your Own Photos</h3>
+          <label for="photoUpload" class="upload-btn">Choose Photo</label>
+          <input type="file" id="photoUpload" class="file-input" accept="image/*" />
+          <input type="text" id="photoCaption" class="caption-input" placeholder="Add a funny caption" />
+          <button id="addPhotoBtn" class="add-photo-btn">Add to Gallery</button>
+        </div>
+
+        <div class="photo-gallery" id="photoGallery">
+          <!-- Default Photos -->
+          <div class="photo-container">
+            <img src="./img/1.jpg" alt="Birthday placeholder" />
+            <div class="photo-caption">Cantikkuu🥰</div>
+          </div>
+          <div class="photo-container">
+            <img src="./img/2.jpg" alt="Birthday placeholder" />
+            <div class="photo-caption">Kesayanganku😘</div>
+          </div>
+          <div class="photo-container">
+            <img src="./img/3.jpg" alt="Birthday placeholder" />
+            <div class="photo-caption">Baik hati dan penyayang😍</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Page -->
+      <div class="page message-page" id="message">
+        <h2 class="message-title">Your Special Day</h2>
+        <div class="message-card">
+          <div class="message-content">
+            <p>Di hari yang luar biasa ini, saya hanya ingin mengatakan...</p>
+            <p>Kamu benar-benar fantastis, luar biasa, dan unik!</p>
+            <p>
+              <span class="emoji">🎂</span>
+              <span class="emoji">🎈</span>
+              <span class="emoji">🎉</span>
+            </p>
+            <p id="birthdayWish">Usia hanyalah angka, tetapi kehebatanmu tak terbatas</p>
+            <p class="message-signature">With love and laughter,<br />Your friends and family</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>Made with <span class="heart">❤</span> for your special day</p>
+      </footer>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="music-controls">
+        <div class="play-pause" id="playPauseBtn">▶</div>
+        <audio id="birthdayMusic" loop>
+          <source src="./music/hbd 25.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="music-info">
+        <div class="song-title">Birthday Music</div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
